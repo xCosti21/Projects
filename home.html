@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/scss.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&ampdisplay=swap" rel="stylesheet">
+        <script src="javascript/java.js"></script>
+        <title>Space Home</title>
+        <link rel="icon" type="image/x-icon" href="images/nasa-icon.ico">
+    </head>
+    <body onload="showDivs(1)">
+
+        <div id="menubar">
+            <img src="images/logo.png" alt="Logo">
+            
+            <div class="meniu"> 
+                <a href="home.html">Home</a>
+                
+                <div class="dropdown">
+                    <form style="display: inline" action="science.html" method="get">
+                        <button class="menubutton dropbutton">Science
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="science/key-concepts.html">Key Concepts</a>
+                        <a href="science/solar-system.html">Solar Systems</a>
+                        <a href="science/exoplanets.html">Exoplanets</a>
+                        <a href="science/stars-and-nebulas.html">Stars and Nebulas</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <form style="display: inline" action="quick-facts.html" method="get">
+                        <button class="menubutton dropbutton">Quick-facts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="quick-facts/telescope-facts.html">Telescope Quick Facts</a>
+                        <a href="quick-facts/science-facts.html">Science Quick Facts</a>
+                        <a href="quick-facts/mission-facts.html">Mission Quick Facts</a>
+                        <a href="quick-facts/all-facts.html">All Quick Facts</a>
+                    </div>
+                </div>
+    
+                <a href="about-us.html">About Us</a>
+    
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div id="header">
+            <div class="sprite"></div>
+            <div id="headercontent">
+                <div id="titlu">HUBBLE SPACE TELESCOPE</div>
+                <div id="subtitlu">Embark on a Journey of Discovery</div>
+            </div>
+            <div class="sprite"></div>
+        </div>
+
+        <div id="img_button_container">
+            <div id="img_button_container_inside">
+
+                <a href="https://hubblesite.org/news/news-releases" target="_blank" class="img_button">
+                    <div class="inside_circle" id="news_button"><div>NEWS</div></div>
+                </a>
+
+                <a href="https://hubblesite.org/resource-gallery/images" target="_blank" class="img_button">
+                    <div class="inside_circle" id="images_button"><div>IMAGES</div></div>
+                </a>
+
+                <a href="https://hubblesite.org/resource-gallery/videos" target="_blank" class="img_button">
+                    <div class="inside_circle" id="videos_button"><div>VIDEOS</div></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="announcements">
+            <div class="subtitle-white">ANNOUNCEMENTS</div>
+            <div class="anunt">
+            
+                <img src="images/constelatii.jpg" alt="constelatii" class="img_anunt">
+
+                <div class="caseta_anunt">
+                    <div class="subtitlu_anunt"><a href="https://hubblesite.org/resource-gallery/learning-resources/tonights-sky" target="_blank">Monthly Tonight's Sky: January Video Now Available</a></div>
+                    <div class="text_anunt">Learn about the constellations you can observe in the night sky during the month of November.</div>
+                    <div class="link_anunt"><a href="https://hubblesite.org/resource-gallery/learning-resources/tonights-sky" target="_blank">WATCH THE VIDEO ></a></div>
+                </div>
+            </div>
+            <div class="anunt">
+                <div id="data">
+                    <div id="cifra6">7</div>
+                    <div>
+                        <div>FEB</div>
+                        <div>2023</div>
+                    </div>
+                </div>
+                <div class="caseta_anunt">
+                    <div class="subtitlu_anunt"><a href="https://www.stsci.edu/contents/events/pls/2023/supermassive-black-holes-in-the-center-of-galaxies.html" target="_blank">February's PLS:Supermassive Black Holes in the Center of Galaxies</a></div>
+                    <div class="text_anunt">Join us for a lecture on a diverse selection of cosmic topics which are typically held the first Tuesday of every month.</div>
+                    <div class="link_anunt"><a href="https://www.stsci.edu/contents/events/pls/2022/high-energy-astronomy-with-the-swift-observatory" target="_blank">GET THE DETAILS </a></div>
+                </div>
+            </div>
+            <div class="anunt">
+                <img src="images/ullyses.jpg" alt="ullyses" class="img_anunt">
+                
+                    <div class="caseta_anunt">
+                        <div class="subtitlu_anunt"><a href="https://hubblesite.org/mission-and-telescope/hubbles-ullyses-program" target="_blank">Introducing Hubble' ULLYSES Program</a></div>
+                        <div class="text_anunt">Hubble has embarked on an extensive three-year program to observe the ultraviolet emissions of young stars.</div>
+                        <div class="link_anunt"><a href="#ullyses_program" target="_blank">LEARN MORE ></a></div>
+                    </div>
+                </div>
+        </div>
+        
+    <div class="favorites">
+        <div class="subtitle-black" id="favorite">HUBBLE'S FAVORITES</div>
+        <div class="subtitle-redirect"><a href="https://hubblesite.org/resource-gallery/images?Collection=Hubble%20Favorites" target="_blank" class="redirect_link">VIEW ALL HUBBLE FAVORITES</a></div>
+        <div class="slideshow">
+            <img src="images/slide1.jpg" class="img_slide" alt="poza1">
+            <img src="images/slide2.jpg" class="img_slide" alt="poza2">
+            <img src="images/slide3.jpg" class="img_slide" alt="poza3">
+            <img src="images/slide4.jpg" class="img_slide" alt="poza4">
+            <img src="images/slide5.jpg" class="img_slide" alt="poza5">
+            <img src="images/slide6.jpg" class="img_slide" alt="poza6">
+            <img src="images/slide7.jpg" class="img_slide" alt="poza7">
+            <img src="images/slide8.jpg" class="img_slide" alt="poza8">
+            <button class="slide_button" id="slide_left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="slide_button" id="slide_right" onclick="plusDivs(+1)">&#10095;</button>
+            <div class="dots">
+                <div class="dots_container">
+                    <span class="slidenumber" onclick="currentDiv(1)"></span>
+                    <span class="slidenumber" onclick="currentDiv(2)"></span>
+                    <span class="slidenumber" onclick="currentDiv(3)"></span>
+                    <span class="slidenumber" onclick="currentDiv(4)"></span>
+                    <span class="slidenumber" onclick="currentDiv(5)"></span>
+                    <span class="slidenumber" onclick="currentDiv(6)"></span>
+                    <span class="slidenumber" onclick="currentDiv(7)"></span>
+                    <span class="slidenumber" onclick="currentDiv(8)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="live_telescope">
+        <div class="subtitle-black dark">WHAT IS HUBBLE LOOKING AT NOW?</div>
+        <div class="subtitle-redirect"><a href="https://spacetelescopelive.org/latest" target="_blank" class="redirect_link">VISIT SPACE TELESCOPE LIVE</a></div>
+    </div>
+</body>
+</html>

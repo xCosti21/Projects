@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../style/scss.css" type="text/css">
+        <title>TELESCOPE QUICK FACTS</title>
+        <script src="../javascript/java.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&ampdisplay=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../images/nasa-icon.ico">
+    </head>
+    <body>
+
+        <div id="menubar">
+            <img src="../images/logo.png" alt="Logo">
+    
+            <div class="meniu">
+    
+                <a href="../home.html">Home</a>
+    
+                <div class="dropdown">
+                    <form style="display: inline" action="../science.html" method="get">
+                        <button class="menubutton dropbutton">Science
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="../science/key-concepts.html">Key Concepts</a>
+                        <a href="../science/solar-system.html">Solar Systems</a>
+                        <a href="../science/exoplanets.html">Exoplanets</a>
+                        <a href="../science/stars-and-nebulas.html">Stars and Nebulas</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <form style="display: inline" action="../quick-facts.html" method="get">
+                        <button class="menubutton dropbutton">Quick-facts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="../quick-facts/telescope-facts.html">Telescope Quick Facts</a>
+                        <a href="../quick-facts/science-facts.html">Science Quick Facts</a>
+                        <a href="../quick-facts/mission-facts.html">Mission Quick Facts</a>
+                        <a href="../quick-facts/all-facts.html">All Quick Facts</a>
+                    </div>
+                </div>
+    
+                <a href="../about-us.html">About Us</a>
+    
+                <a href="../contact-us.html">Contact Us</a>
+            </div>
+        </div>
+        
+        <div class="subpage-header telescopefactsheader">
+            <div class="s-title-container">
+                <div class="s-header-content">TELESCOPE QUICK FACTS</div>
+            </div>
+        </div>
+
+        <div class="page-path">
+            <a href="../home.html" class="path-link" id="home-path">Home</a>
+            <div class="path-arrow">></div>
+            <a href="../quick-facts.html" class="path-link">Quick Facts</a>
+        </div>
+
+        <div class="subpage-container">
+            <div class="share-buttons">
+                <a href="http://www.facebook.com/sharer.php?u=https://hubblesite.org/science&amp;t=Science" target="_blank"><div class="share-button"><img src="../images/facebook.svg" class="social_media_logo" alt="poza3"></div></a>
+                <a href="http://twitter.com/share?url=https://hubblesite.org/science&amptext=Science&amphashtags=Hubble" target="_blank"><div class="share-button"><img src="../images/twitter.svg" class="social_media_logo" alt="poza3"></div></a>
+                <a href="mailto:?subject=Science&ampbody=https://hubblesite.org/science" target="_blank"><div class="share-button"><img src="../images/mail.svg" class="social_media_logo" alt="poza3"></div></a>
+            </div>
+            <div class="faq-container">
+
+                <div class="expand-all">
+                    <button class="expand-all-buttons" id="expand-button-all" onclick="expandAll()">EXPAND ALL</button>
+                    <button class="expand-all-buttons" id="collapse-button-all" onclick="collapseAll()">COLLAPSE ALL</button>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer1', 'a1+')">
+                    Are the colors in Hubble images real?
+                    <span class="expand-button" id="a1+">+</span>
+                </button>
+                <div class="answer" id="answer1">
+                    <p>There are no natural color cameras aboard Hubble and there never have been. The optical cameras on board have all been digital <a href="https://hubblesite.org/glossary.html#h3-CK-2834604b-61e4-4fcb-95d4-d3aaea74118d" target="_blank" class="answer-link">CCD</a> cameras, which take images as grayscale pixels but use colored filters to isolate different colors in each image.</p>
+                    <p>Sometimes the color in the images is as natural as possible. However, the color given to the images is not just artistic embellishment. The images are, indeed, downloaded as black and white, and color is added for a number of different reasons — for example, to show the location of chemical elements and highlight features so subdued that the human eye cannot see them.</p>
+                    <p>For more information, read <a href="https://hubblesite.org/contents/articles/the-meaning-of-light-and-color" target="_blank" class="answer-link">The Meaning of Light and Color</a>, which explains in detail how color is added to images.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer2', 'a2+')">
+                    Can Hubble see the Apollo landing sites on the Moon?
+                    <span class="expand-button" id="a2+">+</span>
+                </button>
+                <div class="answer" id="answer2">
+                    <p>No, Hubble cannot take photos of the Apollo landing sites. An object on the Moon, even the size of a large house, is too small to resolve. So, anything we left on the Moon cannot be resolved in any Hubble image. It would just appear as a dot blended with its surroundings.</p>
+                    <p>Here is a <a href="https://hubblesite.org/contents/news-releases/1999/news-1999-14" target="_blank" class="answer-link">picture</a> that Hubble took of the Moon.</p>
+                </div>
+                
+                <button class="question" onclick="qaSelect('answer3', 'a3+')">
+                    Can Hubble take pictures of Earth?
+                    <span class="expand-button" id="a3+">+</span>
+                </button>
+                <div class="answer" id="answer3">
+                    <p>The surface of the Earth is whizzing by as Hubble orbits, and the pointing system, designed to track the distant <a href="https://hubblesite.org/glossary.html#h3-CK-d0c9d2de-3fc3-45be-9b6f-d9189ecebe4f" target="_blank" class="answer-link">stars</a>, cannot track an object on the Earth. The shortest exposure time on any of the Hubble instruments is 0.1 seconds, and in this time Hubble moves almost half a mile, about 700 meters. A picture Hubble took of Earth would be completely streaked.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer4', 'a4+')">
+                    Can we see live photos from Hubble?
+                    <span class="expand-button" id="a4+">+</span>
+                </button>
+                <div class="answer" id="answer4">
+                    <p>While there is no “real time” camera or webcam on board the telescope for live relay links, you can find out what Hubble is observing at any time by visiting <a href="http://spacetelescopelive.org/" target="_blank" class="answer-link">Space Telescope Live</a>. Usually, Hubble is looking at these targets for the first time, so the images you will see there are from other telescopes, but give you an idea of where Hubble is looking.</p>
+                    <p>The images that Hubble takes are digital pictures and <a href="https://hubblesite.org/glossary.html#h3-CK-574aed23-5c1d-44fe-bd77-0360796717ec" target="_blank" class="answer-link">spectra</a> that are generally released to the public after six months (to allow the investigators time to do their research). The data, which are transmitted from the telescope in digital form, need to be converted from this digitized information by computers into black-and-white photos. These are then enhanced to discern details in the images.</p>
+                    <p>Learn more about <a href="https://hubblesite.org/mission-and-telescope/the-telescope" target="_blank" class="answer-link">how the telescope and its instruments operate</a> and its <a href="https://hubblesite.org/mission-and-telescope/instruments" target="_blank" class="answer-link">instruments</a>.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer6', 'a6+')">
+                    Why do some Hubble images have a stair-shaped corner?
+                    <span class="expand-button" id="a6+">+</span>
+                </button>
+                <div class="answer" id="answer6">
+                    <p>The strange, stair-shaped images come from the Wide Field and Planetary Camera 2 (WFPC2), removed from Hubble in 2009. WFPC2 consisted of four cameras, each of which took a picture of a section of the target. It's like taking four pictures of a single scene, then putting them together to create the whole picture.</p>
+                    <p>But one of WFPC2's cameras took a magnified view of the section it's observing, to allow us to study that section in finer detail. When the images are processed, that magnified section is shrunk down to the same scale as the other sections, so that it fits into the image.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer7', 'a7+')">
+                    Who was Edwin Hubble?
+                    <span class="expand-button" id="a7+">+</span>
+                </button>
+                <div class="answer" id="answer7">
+                    <p>The Hubble Space Telescope was named after <a href="https://hubblesite.org/glossary.html#h3-CK-dbc0b51f-2679-4119-9fcb-21e108c9b3ae" target="_blank" class="answer-link">astronomer</a> Edwin Powell Hubble (1889–1953), who made some of the most important discoveries in modern <a href="https://hubblesite.org/glossary.html#h3-CK-c323ba5c-eddb-4221-9c85-a9fd8f50a584" target="_blank" class="answer-link">astronomy</a>. In the 1920s, making use of relationships established by Henrietta Swan Leavitt, Dr. Hubble showed that some of the numerous distant, faint clouds of light in the universe were actually entire <a href="https://hubblesite.org/glossary.html#h3-CK-c9341de0-583b-43c7-81f6-8e9d528c521a" target="_blank" class="answer-link">galaxies</a> — much like our own <a href="https://hubblesite.org/glossary.html#h3-CK-e10fe068-b5cb-4a65-a72b-f7d3f85ff279" target="_blank" class="answer-link">Milky Way</a>. The realization that the Milky Way is only one of many galaxies forever changed the way humanity views our place in the universe. But perhaps his greatest discovery came in 1929, when Hubble determined that the farther a galaxy is from Earth, the faster it appears to move away. This notion of an expanding universe formed the basis of the big bang theory, which states that the universe began with an intense burst of energy at a single moment in time and has been expanding ever since.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer9', 'a9+')">
+                    When was the Hubble Space Telecope launched?
+                    <span class="expand-button" id="a9+">+</span>
+                </button>
+                <div class="answer" id="answer9">
+                    <p>Hubble was launched aboard the space shuttle Discovery (STS-31) on April 24, 1990. It was deployed into orbit the following day, April 25, 1990.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer10', 'a10+')">
+                    Where is Hubble?
+                    <span class="expand-button" id="a10+">+</span>
+                </button>
+                <div class="answer" id="answer10">
+                    <p>Hubble orbits the Earth at an altitude of about 340 miles (547 kilometers), inclined 28.5 degrees to the equator. This vantage point is above the negative effects of Earth’s <a href="https://hubblesite.org/glossary.html#h3-CK-9dc6582b-9c9e-486a-b508-a2bec50e14f1" target="_blank" class="answer-link">atmosphere</a>.  Traveling at a speed of about 17,000 miles per hour (27,300 kilometers per hour), Hubble takes about 95 minutes to complete one orbit around Earth.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer11', 'a11+')">
+                    Why is Hubble a space telescope?
+                    <span class="expand-button" id="a11+">+</span>
+                </button>
+                <div class="answer" id="answer11">
+                    <p>Shifting pockets of air in Earth’s <a href="https://hubblesite.org/glossary.html#h3-CK-9dc6582b-9c9e-486a-b508-a2bec50e14f1" target="_blank" class="answer-link">atmosphere</a> distort light from space — that’s why <a href="https://hubblesite.org/glossary.html#h3-CK-d0c9d2de-3fc3-45be-9b6f-d9189ecebe4f" target="_blank" class="answer-link">stars</a> seem to twinkle when viewed from the ground. The atmosphere also blocks some <a href="https://hubblesite.org/glossary.html#h3-CK-2f338315-1d93-4136-bf26-f47f2e531d91" target="_blank" class="answer-link">wavelengths</a> of light partially or entirely, particularly ultraviolet light. This makes space the only place where a telescope can get a truly clear and comprehensive view of the universe. Although Hubble also sees visible and infrared light, it is the telescope’s capability in the ultraviolet that will not be matched or replaced in the near future.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer12', 'a12+')">
+                    How do Hubble's mirrors work?
+                    <span class="expand-button" id="a12+">+</span>
+                </button>
+                <div class="answer" id="answer12">
+                    <p>Hubble is a <a href="https://hubblesite.org/glossary.html#h3-CK-0434b443-ff08-4372-ad18-da19d788c3a7" target="_blank" class="answer-link">Cassegrain telescope</a> — a type of reflecting telescope. Light enters the telescope and strikes the large primary, or main, mirror. The light is then reflected from the primary mirror onto the secondary mirror, which then focuses the light back through a hole in the primary mirror to a point behind that mirror, where the science instruments are located. Hubble’s primary mirror is 94.5 inches (2.4 meters) in diameter.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer13', 'a13+')">
+                    What are Hubble's science instruments?
+                    <span class="expand-button" id="a13+">+</span>
+                </button>
+                <div class="answer" id="answer13">
+                    <p>Hubble collects light from celestial objects and directs it to the telescope’s <a href="https://hubblesite.org/mission-and-telescope/instruments" target="_blank" class="answer-link">science instruments</a>. Hubble’s current suite of instruments includes the Wide Field Camera 3 (WFC3), Cosmic Origins Spectrograph (COS), Advanced Camera for Surveys (ACS), Space Telescope Imaging Spectrograph (STIS), and Fine Guidance Sensors (FGS).</p>
+                    <p>These are not the only instruments that have flown aboard Hubble. The telescope was designed to be visited periodically by astronauts, who brought new instruments and technology, and made repairs, from December 1993 to May 2009.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer14', 'a14+')">
+                    When was Hubble serviced?
+                    <span class="expand-button" id="a14+">+</span>
+                </button>
+                <div class="answer" id="answer14">
+                    <p>Hubble was serviced on-orbit five times by astronauts aboard the space shuttle. They rendezvoused with the telescope and placed it in the shuttle’s payload bay to complete the servicing. Below are the names and dates of the servicing missions:</p>
+                    <ul class="list-circle">
+                        <li>Servicing Mission 1 (STS-61): December 1993</li>
+                        <li>Servicing Mission 2 (STS-82): February 1997</li>
+                        <li>Servicing Mission 3A (STS-103): December 1999</li>
+                        <li>Servicing Mission 3B (STS-109): March 2002</li>
+                        <li>Servicing Mission 4 (STS-125): May 2009</li>
+                    </ul>
+                    <p>Learn more about <a href="https://hubblesite.org/mission-and-telescope/servicing-missions" target="_blank" class="answer-link">Hubble's servicing missions</a>.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer15', 'a15+')">
+                    What is the longevity of Hubble?
+                    <span class="expand-button" id="a15+">+</span>
+                </button>
+                <div class="answer" id="answer15">
+                    <p>Hubble is more scientifically productive today than at any time in its past, and NASA plans to operate Hubble at least well into this new decade.  Hubble's longevity is partly due to its multiple <a href="https://hubblesite.org/mission-and-telescope/servicing-missions" target="_blank" class="answer-link">servicing missions</a>, the last one being in 2009.  That is when astronauts installed a new device, the Soft Capture Mechanism, to allow a robotic spacecraft to attach itself to Hubble someday, once the telescope is at the end of its life, and guide its descent to Earth or boost it to a higher orbit.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page_end">
+            <div class="page_end_content">
+                <div class="page_end_links">
+                    <div class="site_redirect">
+                        <div class="link_row">
+                            <a href="../about-us.html" class="page_end_link">About Us</a>
+                            <a href="../contact-us.html" class="page_end_link">Contact Us</a>
+                        </div>
+                        <div class="link_row">
+                            <a href="https://hubblesite.org" target="_blank" class="page_end_link">Inspiration</a>
+                        </div>
+                    </div>
+                    <div class="social_media_links">
+                        <a href="https://www.facebook.com/HubbleTelescope/" target="_blank"><div class="social_media_button"><img src="../images/facebook.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://twitter.com/HubbleTelescope" target="_blank"><div class="social_media_button"><img src="../images/twitter.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://www.instagram.com/space_telescopes/" target="_blank"><div class="social_media_button"><img src="../images/instagram.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://www.youtube.com/user/HubbleSiteChannel" target="_blank"><div class="social_media_button"><img src="../images/youtube.png" class="social_media_logo" alt="poza3"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

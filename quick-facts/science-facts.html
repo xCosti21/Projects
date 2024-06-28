@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../style/scss.css" type="text/css">
+        <title>SCIENCE QUICK FACTS</title>
+        <script src="../javascript/java.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&ampdisplay=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../images/nasa-icon.ico">
+    </head>
+    <body>
+
+        <div id="menubar">
+            <img src="../images/logo.png" alt="Logo">
+    
+            <div class="meniu">
+    
+                <a href="../home.html">Home</a>
+    
+                <div class="dropdown">
+                    <form style="display: inline" action="../science.html" method="get">
+                        <button class="menubutton dropbutton">Science
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="../science/key-concepts.html">Key Concepts</a>
+                        <a href="../science/solar-system.html">Solar Systems</a>
+                        <a href="../science/exoplanets.html">Exoplanets</a>
+                        <a href="../science/stars-and-nebulas.html">Stars and Nebulas</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <form style="display: inline" action="../quick-facts.html" method="get">
+                        <button class="menubutton dropbutton">Quick-facts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                      </form>
+                    <div class="dropdown-content">
+                        <a href="../quick-facts/telescope-facts.html">Telescope Quick Facts</a>
+                        <a href="../quick-facts/science-facts.html">Science Quick Facts</a>
+                        <a href="../quick-facts/mission-facts.html">Mission Quick Facts</a>
+                        <a href="../quick-facts/all-facts.html">All Quick Facts</a>
+                    </div>
+                </div>
+    
+                <a href="../about-us.html">About Us</a>
+    
+                <a href="../contact-us.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="subpage-header sciencefactsheader">
+            <div class="s-title-container">
+                <div class="s-header-content">SCIENCE QUICK FACTS</div>
+            </div>
+        </div>
+
+        <div class="page-path">
+            <a href="../home.html" class="path-link" id="home-path">Home</a>
+            <div class="path-arrow">></div>
+            <a href="../quick-facts.html" class="path-link">Quick Facts</a>
+        </div>
+
+        <div class="subpage-container">
+            <div class="share-buttons">
+                <a href="http://www.facebook.com/sharer.php?u=https://hubblesite.org/science&amp;t=Science" target="_blank"><div class="share-button"><img src="../images/facebook.svg" class="social_media_logo" alt="poza3"></div></a>
+                <a href="http://twitter.com/share?url=https://hubblesite.org/science&amptext=Science&amphashtags=Hubble" target="_blank"><div class="share-button"><img src="../images/twitter.svg" class="social_media_logo" alt="poza3"></div></a>
+                <a href="mailto:?subject=Science&ampbody=https://hubblesite.org/science" target="_blank"><div class="share-button"><img src="../images/mail.svg" class="social_media_logo" alt="poza3"></div></a>
+            </div>
+            <div class="faq-container">
+
+                <div class="expand-all">
+                    <button class="expand-all-buttons" id="expand-button-all" onclick="expandAll()">EXPAND ALL</button>
+                    <button class="expand-all-buttons" id="collapse-button-all" onclick="collapseAll()">COLLAPSE ALL</button>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer5', 'a5+')">
+                    Are all Hubble data available to the public?
+                    <span class="expand-button" id="a5+">+</span>
+                </button>
+                <div class="answer" id="answer5">
+                    <p>Yes … eventually!  Astronomers who requested the data generally have six months to publish their findings before the data are publicly released.</p>
+                    <p>After new instruments were installed during servicing missions to Hubble, early release observations were very quickly made public. These photos showed the world that the instruments were meeting expectations.</p>
+                    <p>Hubble images produced by the Space Telescope Science Institute are covered by <a href="https://hubblesite.org/copyright" target="_blank" class="answer-link">copyright</a> law. This copyright covers most images displayed on all of our websites. NASA holds worldwide copyright on publicly released Hubble images, which means they are in the public domain and free of charge to use. All Hubble data becomes non-proprietary after six months, and its archive can be freely accessed by anyone. However, the images cannot be used to imply any endorsement of a person or product by NASA.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer16', 'a16+')">
+                    How old is the Universe?
+                    <span class="expand-button" id="a16+">+</span>
+                </button>
+                <div class="answer" id="answer16">
+                    <p>The <a href="https://hubblesite.org/glossary.html#h3-CK-cb5e1ddd-f1de-4834-ae83-42675416f75c" target="_blank" class="answer-link">universe</a> is approximately 13.8 billion years old. Hubble uses the universe’s expansion rate to determine its age. Hubble and the European Space Agency’s Gaia space observatory calculate this rate by measuring the distances between nearby galaxies using a special type of <a href="https://hubblesite.org/glossary.html#h3-CK-38b41f26-d334-4624-ac80-af0a55df5455" target="_blank" class="answer-link">variable star</a> as a cosmic yardstick. By studying the local universe, they’re measuring the recent rate of the universe’s expansion. This is like measuring the speed of a car and how far it has gone to find out how long it has been driving.</p>
+                    <a href="https://hubblesite.org/science/universe" target="_blank" class="question-link">HUBBLE'S CONTRIBUTIONS TO UNDERSTANDING THE UNIVERSE ></a>
+                    <p></p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer17', 'a17+')">
+                    How big is the Universe?
+                    <span class="expand-button" id="a17+">+</span>
+                </button>
+                <div class="answer" id="answer17">
+                    <p>We can observe only a portion of the entire <a href="https://hubblesite.org/glossary.html#h3-CK-cb5e1ddd-f1de-4834-ae83-42675416f75c" target="_blank" class="answer-link">universe</a>. Because the universe is only about 13.8 billion years old, light has only had about 13.8 billion years to travel through it. Although the observable universe is finite, the entire universe is probably much larger. It could even extend infinitely in all directions.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer18', 'a18+')">
+                    In what sense is the Universe expanding?
+                    <span class="expand-button" id="a18+">+</span>
+                </button>
+                <div class="answer" id="answer18">
+                    <p>Although we see <a href="https://hubblesite.org/glossary.html#h3-CK-c9341de0-583b-43c7-81f6-8e9d528c521a" target="_blank" class="answer-link">galaxies</a> moving away from us in all directions, this does not mean that our galaxy is in the center of some sort of explosion; observers in other galaxies would see the same thing. It only means that the space between all galaxies is growing larger.</p>
+                </div>
+
+                <button class="question" type="button" onclick="qaSelect('answer21', 'a21+')">
+                    What is dark energy?
+                    <span class="expand-button" id="a21+">+</span>
+                </button>
+                <div class="answer" id="answer21">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-dde5dce3-526e-4113-a20b-5cb390b2a09b" target="_blank" class="answer-link">Dark energy</a> is a repulsive force, an unknown form of energy throughout space that is accelerating the expansion of the universe. Dark energy was discovered in 1998 by two teams of astronomers, and Hubble played a critical role. This <a href="https://hubblesite.org/glossary.html#h3-CK-c1f7da04-3a45-456f-ae6f-9d0026fc30de" target="_blank" class="answer-link">acceleration</a> is thought to have begun about 5 billion years ago.</p>
+                    <p><a href="https://hubblesite.org/contents/articles/dark-energy" target="_blank" class="question-link">LEARN MORE ABOUT DARK ENERGY ></a></p>
+                </div>
+
+                <button class="question" type="button" onclick="qaSelect('answer19', 'a19+')">
+                    What is dark matter?
+                    <span class="expand-button" id="a19+">+</span>
+                </button>
+                <div class="answer" id="answer19">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-5472c8f2-c834-4419-bcd1-a286e1b558a8" target="_blank" class="answer-link">Dark matter</a> is invisible matter that makes up roughly 80 percent of the mass of the universe. It does not interact with light or other <a href="https://hubblesite.org/glossary.html#h3-CK-4c259d5b-d182-4aba-84ce-e9da57923ef2" target="_blank" class="answer-link">electromagnetic radiation</a>, so it cannot be seen directly. It is detected by measuring its gravitational effects. For example, the cosmos would fly apart due to the outward pressure of dark energy if not for the gravity provided by dark matter’s tremendous mass. Scientists think it may be an elusive kind of subatomic particle, or particles, that outnumbers normal matter particles by five to one.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer20', 'a20+')">
+                    What is a black hole?
+                    <span class="expand-button" id="a20+">+</span>
+                </button>
+                <div class="answer" id="answer20">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-6cf753c4-38ed-4558-9cea-8b28d3b3cb55" target="_blank" class="answer-link">black hole</a> is a region of space packed with so much matter that its own gravity prevents anything from escaping — even a ray of light. Black holes can form when massive stars run out of fuel and collapse under their own weight, creating such strong gravity that they disappear from view. Although completely invisible, a black hole exerts a gravitational pull on surrounding matter.</p>
+                    <p><a href="https://hubblesite.org/contents/articles/black-holes" target="_blank" class="question-link">LEARN MORE ABOUT BLACK HOLES ></a></p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer22', 'a22+')">
+                    How is a black hole created?
+                    <span class="expand-button" id="a22+">+</span>
+                </button>
+                <div class="answer" id="answer22">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-be921073-29d1-4db8-ad72-44dbc6aaf6b6" target="_blank" class="answer-link">Stellar black holes</a> form when the center of a very massive, dying star collapses in upon itself. This collapse may also cause a <a href="https://hubblesite.org/glossary.html#h3-CK-1846f16d-cb38-464e-803b-695531eecffe" target="_blank" class="answer-link">supernova</a>, or an exploding star, that blasts the outer parts of the star into space. If the core remaining after the supernova is very massive, gravity completely collapses the core into a black hole with infinite density.</p>
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-e9e165cf-4a62-4ac8-8671-b2e1755784d0" target="_blank" class="answer-link">Supermassive black holes</a> formed at the same time as the galaxy in which they reside. They are thought to have grown from seeds from the earliest massive stars. The size of the supermassive black hole is related to the size and mass of its host galaxy.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer23', 'a23+')">
+                    Do all stars become black holes?
+                    <span class="expand-button" id="a23+">+</span>
+                </button>
+                <div class="answer" id="answer23">
+                    <p>Only <a href="https://hubblesite.org/glossary.html#h3-CK-d0c9d2de-3fc3-45be-9b6f-d9189ecebe4f" target="_blank" class="answer-link">stars</a> with very large masses can become black holes. Our sun, for example, is not massive enough to become a black hole. Four billion years from now when the Sun runs out of available nuclear fuel in its core, it will die a quiet death. Stars of this type end their lives as <a href="https://hubblesite.org/glossary.html#h3-CK-2f14a07b-0a1e-4282-b075-8c20f3e5f84f" target="_blank" class="answer-link">white dwarf stars</a>. More massive stars may collapse into black holes at the end of their lives.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer24', 'a24+')">
+                    Since light has no mass, how can it be trapped by the gravitational pull of a black hole?
+                    <span class="expand-button" id="a24+">+</span>
+                </button>
+                <div class="answer" id="answer24">
+                    <p>Newton thought that only objects with mass could produce a <a href="https://hubblesite.org/glossary.html#h3-CK-7b86cecc-7ddd-4935-bd6b-6427898de365" target="_blank" class="answer-link">gravitational force</a> on each other. According to Newton’s theory, the force of gravity should not affect light. Einstein discovered that the situation is a bit more complicated than that.</p>
+                    <p>First, he discovered that gravity is produced by a curved <a href="https://hubblesite.org/glossary.html#h3-CK-a025fd2d-1078-4b24-82f1-c3163feb67ba" target="_blank" class="answer-link">space-time</a>. Then Einstein theorized that the mass of an object actually curves space-time. The stronger the gravitational field of an object, the more the space around the object is warped. In other words, straight lines are no longer straight if exposed to a strong gravitational field; they are curved.</p>
+                    <p>Since light ordinarily travels on a straight-line path, light follows a curved path if it passes through a strong gravitational field. This is why light becomes trapped in a black hole.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer25', 'a25+')">
+                    What does a black hole look like?
+                    <span class="expand-button" id="a25+">+</span>
+                </button>
+                <div class="answer" id="answer25">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-6cf753c4-38ed-4558-9cea-8b28d3b3cb55" target="_blank" class="answer-link">black hole</a> itself is invisible because no light can escape from it. We can’t see a black hole, but the material around it is visible. Material falling into a black hole forms a <a href="https://hubblesite.org/glossary.html#h3-CK-4cdc440b-71cf-45e8-a6e6-7c76622d19aa" target="_blank" class="answer-link">disk</a>, similar to a whirlpool in a bathtub drain. Matter swirling around a black hole heats up and emits radiation that can be detected. Around a <a href="https://hubblesite.org/glossary.html#h3-CK-be921073-29d1-4db8-ad72-44dbc6aaf6b6" target="_blank" class="answer-link">stellar black hole</a>, this matter is composed of gas. Around a <a href="https://hubblesite.org/glossary.html#h3-CK-e9e165cf-4a62-4ac8-8671-b2e1755784d0" target="_blank" class="answer-link">supermassive black hole</a> in the center of a galaxy, the swirling disk is made of not only gas but also stars.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer26', 'a26+')">
+                    What would happen to the Earth's orbit if the Sun were replaced by a black hole?
+                    <span class="expand-button" id="a26+">+</span>
+                </button>
+                <div class="answer" id="answer26">
+                    <p>Nothing at all. The gravity around a <a href="https://hubblesite.org/glossary.html#h3-CK-6cf753c4-38ed-4558-9cea-8b28d3b3cb55" target="_blank" class="answer-link">black hole</a> remains normal unless you get extremely close. If the Sun suddenly became a black hole (which isn’t possible), the Earth and all the other planets would continue to orbit it just as though nothing had changed.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer27', 'a27+')">
+                    How does the Hubble Space Telescope search for black holes?
+                    <span class="expand-button" id="a27+">+</span>
+                </button>
+                <div class="answer" id="answer27">
+                    <figure class="picture-frame half-frame" id="all-facts-half1">
+                        <img src="../images/all-facts-half1.jpg" class="half-picture" alt="poza3">
+                    </figure>
+                    <p>The Space Telescope Imaging Spectrograph (STIS), an instrument installed on Hubble in February 1997, is the space telescope’s main “black hole hunter.” A <a href="https://hubblesite.org/glossary.html#h3-CK-6507a55a-c4c3-445d-b173-30e2a78f5b5d" target="_blank" class="answer-link">spectrograph</a> uses prisms or <a href="https://hubblesite.org/glossary.html#h3-CK-26c3a22d-bea5-407c-bd78-75df2d1c40ab" target="_blank" class="answer-link">diffraction gratings</a> to split the incoming light into its rainbow pattern. Each element interacts with light in a unique rainbow signature. The position and strength of those signatures in a spectrum gives scientists valuable information. STIS can take a spectrum of many places at once across the center of a galaxy, which tells scientists how fast the stars and gas are swirling at that location. With that information, the central mass that the stars are orbiting can be calculated. The faster the stars go, the more massive the central object must be.</p>
+                    <p>STIS found, for example, the signature of a supermassive black hole in the center of the galaxy M84. The spectra showed the disk around the black hole is rotating at a velocity of about 250 miles per second (approximately 400 kilometers per second), equivalent to 900,000 miles (1.4 million kilometers) every hour. Earth orbits our sun at 18.6 miles per second (30 kilometers per). If Earth moved as fast as the disk around M84’s black hole, our year would be only 27 days long.</p>
+                    <p>Learn more about <a href="https://hubblesite.org/contents/news-releases/1997/news-1997-12" target="_blank" class="answer-link">Hubble’s detection of a black hole’s signature</a>.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer28', 'a28+')">
+                    What are gravitational lenses and how do they work?
+                    <span class="expand-button" id="a28+">+</span>
+                </button>
+                <div class="answer" id="answer28">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-26b96ae2-c944-43cb-acb6-cbdfc4da4e37" target="_blank" class="answer-link">gravitational lens</a> occurs when a huge amount of matter, like a cluster of galaxies, creates a gravitational field that distorts and magnifies the light from distant galaxies that are behind it but in the same line of sight. The effect is like looking through a giant magnifying glass. It allows researchers to study the details of early galaxies too far away to be seen with current technology and telescopes.</p>
+                    <p>Smaller objects, like individual stars, can also act as gravitational lenses when more distant stars pass directly behind them. For a few days or weeks, light from the more distant star temporarily appears brighter because it is magnified by the gravity of the closer object. This effect is known as gravitational microlensing.</p>
+                    <p><a href="https://hubblesite.org/contents/articles/gravitational-lensing" target="_blank" class="question-link">LEARN MORE ABOUT GRAVITATIONAL LENSING ></a></p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer29', 'a29+')">
+                    What are gravitational waves?
+                    <span class="expand-button" id="a29+">+</span>
+                </button>
+                <div class="answer" id="answer29">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-27a53988-3034-4dd7-a1a7-48440675ee62" target="_blank" class="answer-link">Gravitational waves</a> are invisible ripples in the fabric of <a href="https://hubblesite.org/glossary.html#h3-CK-a025fd2d-1078-4b24-82f1-c3163feb67ba" target="_blank" class="answer-link">space-time</a>. They are caused by some of the most violent and energetic events in the universe. These include colliding black holes, collapsing stellar cores, and merging <a href="https://hubblesite.org/glossary.html#h3-CK-8e193edb-bc48-4ffe-9613-eed9cc2df8b5" target="_blank" class="answer-link">neutron stars</a>. Gravitational waves travel at the speed of light, squeezing and stretching anything in their path.</p>
+                    <p>In his general theory of relativity, Albert Einstein predicted the existence of gravitational waves. In 1916, his calculations showed that massive, accelerating objects would disrupt and distort space-time like waves moving away from a stone thrown into a pond.</p>
+                    <p>The first gravitational wave signal was detected in September 2015 by the Laser Interferometer Gravitational-wave Observatory (LIGO). Physicists concluded that these gravitational waves were produced during the final fraction of a second of the merger of two black holes to produce a single, more massive black hole.</p>
+                    <p>In August 2017, LIGO detected the first gravitational wave signal from the merging of two neutron stars. Unlike merging black holes, which likely consume any matter around them long before they collide, neutron stars form a maelstrom of hot debris when they merge and produce a wide variety of light. Because it was accompanied by light, Hubble was able to obtain an infrared <a href="https://hubblesite.org/contents/articles/spectroscopy-reading-the-rainbow" target="_blank" class="answer-link">spectrum</a> and <a href="https://hubblesite.org/contents/news-releases/2017/news-2017-41" target="_blank" class="answer-link">photograph the glow</a> from this titanic collision 130 million light-years away.</p>
+                    <p><a href="https://hubblesite.org/contents/articles/gravitational-waves" target="_blank" class="question-link">LEARN MORE ABOUT GRAVITATIONAL WAVES ></a></p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer30', 'a30+')">
+                    What is a galaxy?
+                    <span class="expand-button" id="a30+">+</span>
+                </button>
+                <div class="answer" id="answer30">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-c9341de0-583b-43c7-81f6-8e9d528c521a" target="_blank" class="answer-link">galaxy</a> is an enormous collection of gas, dust and billions of stars held together by gravity. One galaxy can have hundreds of billions of stars and be as large as 200,000 light-years across. Watch a <a href="https://youtu.be/Aeb4yoPRk9w" target="_blank" class="answer-link">video about what makes up a galaxy</a>.</p>
+                    <p><a href="https://hubblesite.org/science/galaxies" target="_blank" class="question-link">HUBBLE'S CONTRIBUTIONS TO UNDERSTANDING GALAXIES ></a></p>                  
+                </div>
+
+                <button class="question" onclick="qaSelect('answer31', 'a31+')">
+                    Where is the Earth in the Milky Way galaxy?
+                    <span class="expand-button" id="a31+">+</span>
+                </button>
+                <div class="answer" id="answer31">
+                    <p>Our <a href="https://hubblesite.org/glossary.html#h3-CK-a28a224d-ff95-47d9-885a-803824175e2c" target="_blank" class="answer-link">solar system</a> is at the edge of a <a href="https://hubblesite.org/glossary.html#h3-CK-11354b11-f0fe-41a3-a077-1680aa9958a8" target="_blank" class="answer-link">spiral arm</a> called the Orion Arm, and is about two-thirds of the way from the center of our galaxy to the edge of the starlight. The Earth is the third planet from the Sun in our solar system.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer32', 'a32+')">
+                    What is the closest galaxy like our own and how far away is it?
+                    <span class="expand-button" id="a32+">+</span>
+                </button>
+                <div class="answer" id="answer32">
+                    <p>The closest <a href="https://hubblesite.org/glossary.html#h3-CK-ea6c5d29-b9fc-4719-961b-43e9741640b5" target="_blank" class="answer-link">spiral galaxy</a> is Andromeda, a galaxy much like our own <a href="https://hubblesite.org/glossary.html#h3-CK-e10fe068-b5cb-4a65-a72b-f7d3f85ff279" target="_blank" class="answer-link">Milky Way</a>. It is 2.2 million light-years away from us. Andromeda is approaching our galaxy at a rate of 670,000 miles per hour (1,100,000 kilometers per hour). Scientists predict that it will collide with our Milky Way galaxy about 5 billion years from now.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer33', 'a33+')">
+                    How did the Solar System form?
+                    <span class="expand-button" id="a33+">+</span>
+                </button>
+                <div class="answer" id="answer33">
+                    <p>The Sun is the collapsed core of an interstellar gas cloud, and the <a href="https://hubblesite.org/glossary.html#h3-CK-0316d5d8-a8ce-4ae2-8ba1-6e0fe470e36b" target="_blank" class="answer-link">planets</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-c845d206-d611-4f95-a5dc-6019397f0f8a" target="_blank" class="answer-link">asteroids</a> and <a href="https://hubblesite.org/glossary.html#h3-CK-84b185a9-40f7-4d12-b8b8-66776d2b958b" target="_blank" class="answer-link">comets</a> are small lumps of dust or ice chunks that stayed in orbit instead of spiraling into the Sun. The planets all formed within a very short period, probably a few million years, about 4.6 billion years ago.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer34', 'a34+')">
+                    How old is the Solar System?
+                    <span class="expand-button" id="a34+">+</span>
+                </button>
+                <div class="answer" id="answer34">
+                    <p>The Solar System is about 4.6 billion years old.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer35', 'a35+')">
+                    How big is the Solar System?
+                    <span class="expand-button" id="a35+">+</span>
+                </button>
+                <div class="answer" id="answer35">
+                    <p>There are no physical boundaries in space. The <a href="https://hubblesite.org/glossary.html#h3-CK-a28a224d-ff95-47d9-885a-803824175e2c" target="_blank" class="answer-link">Solar System</a> consists of eight planets orbiting around one star: the Sun. The farthest planet, <a href="https://hubblesite.org/glossary.html#h3-CK-c00b1e73-2db6-45f7-8d66-ff7e0372ff5b" target="_blank" class="answer-link">Neptune</a>, orbits approximately 30 times further away from the Sun than the Earth. Some of the <a href="https://hubblesite.org/glossary.html#h3-CK-84b185a9-40f7-4d12-b8b8-66776d2b958b" target="_blank" class="answer-link">comets</a> associated with the Solar System travel on orbits that take them much farther from the Sun than Neptune.</p>
+                    <p>Far beyond Neptune’s orbit is thought to be the <a href="https://hubblesite.org/glossary.html#h3-CK-741fea20-7985-49e7-8329-e22993508799" target="_blank" class="answer-link">Oort Cloud</a>, a thick bubble of icy debris that surrounds our solar system. We don't know exactly where it begins and ends, but this distant, predicted cloud may extend a third of the way from our sun to the next star — somewhere between 5,000 and 100,000 times the distance from Earth to the Sun.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer36', 'a36+')">
+                    How many planets are there in our Solar System?
+                    <span class="expand-button" id="a36+">+</span>
+                </button>
+                <div class="answer" id="answer36">
+                    <p>Our solar system officially has eight planets and one star: the Sun. In order from the Sun out, the planets are: <a href="https://hubblesite.org/glossary.html#h3-CK-3922da8b-e150-4f5a-8d59-9cc0d3e5ef4b" target="_blank" class="answer-link">Mercury</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-2a1fcca9-4c4e-4824-a9bc-926962708c0b" target="_blank" class="answer-link">Venus</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-b611827d-b550-4991-9dfb-fb8b683fc5f0" target="_blank" class="answer-link">Earth</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-d1cf5bf5-4665-4ecf-99c5-76a72ae15af7" target="_blank" class="answer-link">Mars</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-9f570595-08d6-4c90-a180-26503e3b61dd" target="_blank" class="answer-link">Jupiter</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-d5d0df7d-b13f-4014-9946-61d5b02128c9" target="_blank" class="answer-link">Saturn</a>, <a href="https://hubblesite.org/glossary.html#h3-CK-1e453f90-675d-4fe4-b48c-7e99fd580501" target="_blank" class="answer-link">Uranus</a> and <a href="https://hubblesite.org/glossary.html#h3-CK-c00b1e73-2db6-45f7-8d66-ff7e0372ff5b" target="_blank" class="answer-link">Neptune</a>.</p>
+                    <p><a href="https://hubblesite.org/science/solar-system" target="_blank" class="question-link">HUBBLE'S CONTRIBUTIONS TO UNDERSTANDING OUR SOLAR SYSTEM ></a></p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer37', 'a37+')">
+                    Are there differences among the planets in our Solar System?
+                    <span class="expand-button" id="a37+">+</span>
+                </button>
+                <div class="answer" id="answer37">
+                    <p>Planets come in different sizes, compositions and colors. The four planets closer to the Sun are <a href="https://hubblesite.org/glossary.html#h3-CK-78ee10e2-e865-4cb1-95f1-5bfc22338502" target="_blank" class="answer-link">rocky planets</a>. They are small in size and similar to Earth in composition. They have no rings and only two of them (Earth and Mars) have moons.</p>
+                    <p>The four outer planets, called <a href="https://hubblesite.org/glossary.html#h3-CK-255c5bbd-0c9c-44f4-8d0d-f57525f4d916" target="_blank" class="answer-link">gas giants</a>, are much larger than the rocky planets. They all have rings and have many moons. The gas giants are made up mostly of hydrogen, helium, frozen water, ammonia, methane and carbon monoxide.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer38', 'a38+')">
+                    Which planets have rings?
+                    <span class="expand-button" id="a38+">+</span>
+                </button>
+                <div class="answer" id="answer38">
+                    <p>The four <a href="https://hubblesite.org/glossary.html#h3-CK-255c5bbd-0c9c-44f4-8d0d-f57525f4d916" target="_blank" class="answer-link">gas giants</a> — Jupiter, Saturn, Uranus, and Neptune — have rings.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer39', 'a39+')">
+                    How thick are Saturn's rings?
+                    <span class="expand-button" id="a39+">+</span>
+                </button>
+                <div class="answer" id="answer39">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-d5d0df7d-b13f-4014-9946-61d5b02128c9" target="_blank" class="answer-link">Saturn’s</a> rings are incredibly thin. The main rings are generally only about 30 feet (10 meters) thick, though parts of the main and other rings can be more than a mile, or several kilometers, thick. The rings are made of dusty ice, with some pieces as large as boulders. These icy chunks gently collide with each other as they orbit around Saturn. Saturn’s gravitational field constantly disrupts these chunks, keeping them spread out and preventing them from combining to form a moon. The rings have a slight pale reddish color due to the presence of organic material mixed with the water ice.</p>
+                    <p>The Hubble telescope has captured snapshots of Saturn with its rings nearly edge-on to our view. <a href="https://hubblesite.org/contents/news-releases/1996/news-1996-16" target="_blank" class="answer-link">Read more about it</a>.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer40', 'a40+')">
+                    What is the difference between a meteor, a meteoroid, and a meteorite?
+                    <span class="expand-button" id="a40+">+</span>
+                </button>
+                <div class="answer" id="answer40">
+                    <p>Most of us probably have seen meteors or “shooting stars.” A <a href="https://hubblesite.org/glossary.html#h3-CK-3b92cdcd-a132-4adb-9e29-3e4b69900204" target="_blank" class="answer-link">meteor</a> is the flash of light that we see in the night sky when a small chunk of interplanetary debris burns up as it passes through our <a href="https://hubblesite.org/glossary.html#h3-CK-9dc6582b-9c9e-486a-b508-a2bec50e14f1" target="_blank" class="answer-link">atmosphere</a>. Meteor refers to the flash of light caused by the debris, not the debris itself. The debris is called a <a href="https://hubblesite.org/glossary.html#h3-CK-ffbaf942-8148-4917-b621-286a210f20da" target="_blank" class="answer-link">meteoroid</a>.</p>
+                    <p>A meteoroid is a piece of <a href="https://hubblesite.org/glossary.html#h3-CK-faa231a3-c840-4ea6-825f-3b208e93e891" target="_blank" class="answer-link">interplanetary matter</a> that is smaller than a kilometer and frequently only millimeters in size. Most meteoroids that enter the Earth’s atmosphere are so small that they vaporize completely and never reach the planet’s surface.</p>
+                    <p>If any part of a meteoroid survives the fall through the atmosphere and lands on Earth, it is called a <a href="https://hubblesite.org/glossary.html#h3-CK-00bb4f2d-b60c-42b1-8703-dc9d0ecc9b5d" target="_blank" class="answer-link">meteorite</a>. Although the vast majority of meteorites are very small, their size can range from that of a pebble (a fraction of a gram) to a huge boulder weighing more than 220 pounds (100 kilograms).</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer41', 'a41+')">
+                    What is an asteroid?
+                    <span class="expand-button" id="a41+">+</span>
+                </button>
+                <div class="answer" id="answer41">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-c845d206-d611-4f95-a5dc-6019397f0f8a" target="_blank" class="answer-link">Asteroids</a> are small, rocky objects that <a href="https://hubblesite.org/glossary.html#h3-CK-b86ba33d-ae1b-4220-88c0-81c55c7041cc" target="_blank" class="answer-link">orbit</a> the Sun like planets, though they are much smaller.  Most live in the main <a href="https://hubblesite.org/glossary.html#h3-CK-a0376613-dbca-4f5f-a372-e87c555d6595" target="_blank" class="answer-link">asteroid belt</a>, a region between the orbits of Mars and Jupiter.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer42', 'a42+')">
+                    What is a comet?
+                    <span class="expand-button" id="a42+">+</span>
+                </button>
+                <div class="answer" id="answer42">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-84b185a9-40f7-4d12-b8b8-66776d2b958b" target="_blank" class="answer-link">Comets</a> are the Solar System’s “dirty snowballs,” small bodies of frozen gases and water ice in which dust particles and rocky material are embedded. A comet has a solid <a href="https://hubblesite.org/glossary.html#h3-CK-40748f1b-fb74-4772-b956-4f3e78120bb2" target="_blank" class="answer-link">nucleus</a>, usually around half a mile to 6 miles (about 1 to 10 kilometers) across. They <a href="https://hubblesite.org/glossary.html#h3-CK-b86ba33d-ae1b-4220-88c0-81c55c7041cc" target="_blank" class="answer-link">orbit</a> the Sun much like the planets, except that comets usually swing very far from the Sun and then very close to it in each orbit.</p>
+                    <p>As a comet nears the Sun, solar radiation vaporizes molecules of gas and dust, creating both the <a href="https://hubblesite.org/glossary.html#h3-CK-8473ccdd-ed02-4344-8998-308b24dd6ce2" target="_blank" class="answer-link">coma</a> — a thin atmosphere — surrounding the nucleus, as well as the characteristic <a href="https://hubblesite.org/glossary.html#h3-CK-1bbee231-65bc-40aa-a433-a2c2efca7e45" target="_blank" class="answer-link">tail comets</a> are best known for. A comet’s tail will always point away from the Sun. This means the tail will not always trail behind the comet, but can also travel beside or in front of it. The coma can be thousands to millions of miles wide, and the tail can reach tens of millions of miles long. Once the coma and tail form, they outshine the nucleus.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer43', 'a43+')">
+                    Why do comets have tails?
+                    <span class="expand-button" id="a43+">+</span>
+                </button>
+                <div class="answer" id="answer43">
+                    <p><a href="https://hubblesite.org/glossary.html#h3-CK-84b185a9-40f7-4d12-b8b8-66776d2b958b" target="_blank" class="answer-link">Comets</a> are lumps of frozen water ice, gas and dust. As a comet approaches the Sun, it starts to heat up. The ice transforms directly from a solid to a vapor, releasing the dust particles embedded inside. Sunlight and the stream of charged particles flowing from the Sun — the <a href="https://hubblesite.org/glossary.html#h3-CK-529a153a-b18a-499c-9eb6-810c3220321d" target="_blank" class="answer-link">solar wind</a> — sweeps the evaporated material and dust back in a long tail. A comet’s ingredients determine the types and number of tails.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer44', 'a44+')">
+                    What is the asteroid belt?
+                    <span class="expand-button" id="a44+">+</span>
+                </button>
+                <div class="answer" id="answer44">
+                    <p>The <a href="https://hubblesite.org/glossary.html#h3-CK-a0376613-dbca-4f5f-a372-e87c555d6595" target="_blank" class="answer-link">asteroid belt</a> is a zone between the orbits of Mars and Jupiter. Scientists believe that the <a href="https://hubblesite.org/glossary.html#h3-CK-c845d206-d611-4f95-a5dc-6019397f0f8a" target="_blank" class="answer-link">asteroids</a> in the asteroid belt never formed a planet because the gravity of nearby Jupiter kept pulling them apart. Today, millions of asteroids probably inhabit the asteroid belt, with many more scattered throughout the Solar System.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer45', 'a45+')">
+                    Has Hubble found planets around other stars?
+                    <span class="expand-button" id="a45+">+</span>
+                </button>
+                <div class="answer" id="answer45">
+                    <p>Hubble is not looking for new <a href="https://hubblesite.org/glossary.html#h3-CK-0316d5d8-a8ce-4ae2-8ba1-6e0fe470e36b" target="_blank" class="answer-link">planets</a> in our own <a href="https://hubblesite.org/glossary.html#h3-CK-a28a224d-ff95-47d9-885a-803824175e2c" target="_blank" class="answer-link">solar system</a>, but the search for planets around other stars is very active. Hubble has achieved direct detection of several different <a href="https://hubblesite.org/glossary.html#h3-CK-a928a2b0-e22b-4b13-9e33-c15c52caa225" target="_blank" class="answer-link">exoplanets</a>, though they are still too small and far away to resolve details.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer46', 'a46+')">
+                    What are globular star clusters?
+                    <span class="expand-button" id="a46+">+</span>
+                </button>
+                <div class="answer" id="answer46">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-bbcde1d2-fd2d-40f8-b06f-9546521b5049" target="_blank" class="answer-link">globular star cluster</a> is a collection of up to 1 million stars that all share the same origin. The globular clusters associated with our <a href="https://hubblesite.org/glossary.html#h3-CK-e10fe068-b5cb-4a65-a72b-f7d3f85ff279" target="_blank" class="answer-link">Milky Way galaxy</a> are typically composed of old stars, more than 10 billion years old. Hubble pictures of other galaxies sometimes reveal globular-like clusters containing young stars that are less than 50 million years old.</p>
+                </div>
+
+                <button class="question" onclick="qaSelect('answer47', 'a47+')">
+                    What is a supernova?
+                    <span class="expand-button" id="a47+">+</span>
+                </button>
+                <div class="answer" id="answer47">
+                    <p>A <a href="https://hubblesite.org/glossary.html#h3-CK-1846f16d-cb38-464e-803b-695531eecffe" target="_blank" class="answer-link">supernova</a> is the explosive death of a star, which unleashes a burst of light through the cosmos. In 1987, a supernova observed in the nearby Large <a href="https://hubblesite.org/glossary" target="_blank" class="answer-link">Magellanic Cloud</a> (an irregular galaxy neighboring our Milky Way galaxy) was the first one visible to the unaided eye since 1604. Hubble was not yet in orbit when the explosion was observed, but it has since made dramatic observations of the expanding gaseous remains of that star. Although supernovas are rare in our galaxy, there are many galaxies and Hubble has observed stellar explosions elsewhere in the universe.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="page_end">
+            <div class="page_end_content">
+                <div class="page_end_links">
+                    <div class="site_redirect">
+                        <div class="link_row">
+                            <a href="../about-us.html" class="page_end_link">About Us</a>
+                            <a href="../contact-us.html" class="page_end_link">Contact Us</a>
+                        </div>
+                        <div class="link_row">
+                            <a href="https://hubblesite.org" target="_blank" class="page_end_link">Inspiration</a>
+                        </div>
+                    </div>
+                    <div class="social_media_links">
+                        <a href="https://www.facebook.com/HubbleTelescope/" target="_blank"><div class="social_media_button"><img src="../images/facebook.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://twitter.com/HubbleTelescope" target="_blank"><div class="social_media_button"><img src="../images/twitter.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://www.instagram.com/space_telescopes/" target="_blank"><div class="social_media_button"><img src="../images/instagram.png" class="social_media_logo" alt="poza3"></div></a>
+                        <a href="https://www.youtube.com/user/HubbleSiteChannel" target="_blank"><div class="social_media_button"><img src="../images/youtube.png" class="social_media_logo" alt="poza3"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
